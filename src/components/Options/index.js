@@ -12,9 +12,6 @@ const Options = ({ searchCards }) => {
                         <FaSearch />
                     </button>
                 </div>
-                {/* <div id="filtering">
-                    <FaFilter />
-                </div> */}
             </div>
     </div>
   );
