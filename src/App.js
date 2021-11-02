@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import About from "./components/About";
 import Cards from "./components/Cards";
 import Card from "./components/Card";
+import Favorites from "./components/Favorites";
 import NotFound from "./components/NotFound";
 import "./App.css";
 
@@ -18,6 +19,7 @@ const App = () => {
       <Route exact path="/contact" component={Contact}/>
       <Route exact path="/about" component={About}/>
       <Route exact path="/cards" component={Cards}/>
+      <Route exact path="/favorites" component={Favorites}/>
       <Route exact path="/card/:id" component={Card}/>
       <Route exact path="*" component={NotFound}/>
       </Switch>

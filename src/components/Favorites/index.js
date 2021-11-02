@@ -1,19 +1,23 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import { cities } from '../../data'
+import { cities } from "../../data";
 import "./style.css";
 
-const Cards = () => {
+const Favorites = () => {
   const history = useHistory();
 
   const cardRoute = (id) => {
     history.push(`/card/${id}`);
   };
 
+  const favCities = cities.filter((city) => {
+    return city.fav === true;
+  });
+
   return (
     <div className="cardsWrapper">
       <div className="cards">
-        {cities.map((city) => {
+        {favCities.map((city) => {
           return (
             <div
               className="card"
@@ -30,4 +34,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default Favorites;

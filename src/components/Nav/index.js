@@ -20,6 +20,7 @@ const Nav = () => {
         <li><Link className="navItem" to="/contact" style={{ textDecoration: 'none' }}>Contact</Link></li>
         <li><Link className="navItem" to="/about" style={{ textDecoration: 'none' }}>About</Link></li>
         <li><Link className="navItem" to="/cards" style={{ textDecoration: 'none' }}>Cards</Link></li>
+        <li><Link className="navItem" to="/favorites" style={{ textDecoration: 'none' }}>Favorites</Link></li>
       </ul>
     </div>
   );
